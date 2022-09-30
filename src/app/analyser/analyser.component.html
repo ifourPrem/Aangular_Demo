@@ -1,0 +1,50 @@
+<html>
+
+  <title>
+      analyser-page
+    </title>
+
+    <body>
+
+      <h5>Traffic Analyser</h5>  
+
+      <form>
+        
+        <label for="time">Time:</label><br>
+
+        <input type="text" id="time" name="time" value={{pInterval}}><br><br>
+
+        <label for="currentOpen">Current Open:</label><br>
+
+        <input type="text" id="currentOpen" name="currentOpen"><br><br>
+
+        <label for="nextOpen">Next Open:</label><br>
+
+        <input type="text" id="nextOpen" name="nextOpen"><br><br>
+
+        <label for="direction">Direction:</label><br>
+
+        <input type="text" id="direction" name="direction" value={{direction}}><br><br>
+
+        <button class="button button2"></button>
+        <button class="button button3">A</button><br>
+
+        <button class="button button1">D</button>
+        <button class="button button2"></button>
+        <button class="button button1">B</button><br>
+
+        <button class="button button2"></button>
+        <button class="button button1">C</button><br>
+      
+        <label for="remainingTime">Remaining Time:</label><br>
+
+        <input type="text" id="remainingTime" name="remainingTime" value={{remainingTime}}><br><br>
+        
+
+      </form> 
+
+      <button (click)="refreshAnalyser()">Back</button>
+
+  </body>
+ 
+  </html>

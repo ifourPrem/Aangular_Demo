@@ -1,0 +1,33 @@
+<html>
+  
+    <title>
+      Main-page
+    </title>
+
+    <body>
+
+      <h4 align = "center">
+        Traffic Management System
+      </h4>
+      <h5>Global configuration</h5>
+      <form #globalCofigeForm = "ngForm" (ngSubmit) = "saveGlobalConfig(globalCofigeForm.value)">
+
+        <label for="Direction">Direction:</label><br>
+
+        <select id="direction" name="direction" ngModel>
+          <option value="clockWise">clock wise</option>
+          <option value="antiClockWise">anti clock wise</option>
+          <option value="upDown">up down</option>
+          <option value="leftRight">left right</option>
+        </select><br><br>
+
+        <label for="lname">Interval:</label><br>
+
+        <input type="text" id="interval" name="interval" ngModel><br><br>
+
+        <input type = "submit" value = "submit">
+      </form> 
+
+    </body>
+ 
+</html>
